@@ -1,0 +1,302 @@
+https://www.simplilearn.com/tutorials/java-tutorial/java-interview-questions#java_interview_questions_for_freshers
+
+======================== GENERAL
+- What is a ClassLoader?
+   A classloader in Java is a subsystem of Java Virtual Machine, dedicated to loading class files when a program is executed; ClassLoader is the first to load the executable file.
+   Java has Bootstrap, Extension, and Application classloaders.
+
+- What are the Memory Allocations available in JavaJava?
+    Java has five significant types of memory allocations.
+
+    Class Memory
+    Heap Memory
+    Stack Memory
+    Program Counter-Memory
+    Native Method Stack Memory
+
+- What are the differences between Heap and Stack Memory in Java?
+  Stack memory in data structures is the amount of memory allocated to each individual programme.
+  It is a fixed memory space. Heap memory, in contrast, is the portion that was not assigned to the Java code but will
+  be available for use by the Java code when it is required, which is generally during the program's runtime.
+
+- Will the program run if we write static public void main?
+  Yes, the program will successfully execute if written so. Because, in Java, there is no specific rule for
+  the order of specifiers
+
+- What is the default value stored in Local Variables?
+  Neither the Local Variables nor any primitives and Object references have any default value stored in them.
+
+- Explain the expected output of the following code segment?
+  public class Simplilearn {
+      public static void main (String args[]){
+          System.out.println(100 + 100 +“Simplilearn");
+          System.out.println(“E-Learning Company" + 100 + 100);
+      }
+  }
+
+  The answers for the two print statements are as follows.
+  200Simplilearn
+  E-Learning Company100100
+
+- Define Copy Constructor in Java
+  A Copy Constructor in Java is a constructor that initializes an object through another object of the same class.
+
+- What is a Marker Interface?
+  An empty interface in Java is referred to as a Marker interface. Serializable and Cloneable are some famous examples
+   of Marker Interface.
+
+-  What is Object Cloning?
+  An ability to recreate an object entirely similar to an existing object is known as Object Cloning in Java.
+  Java provides a clone() method to clone a current object offering the same functionality as the original object.
+
+-  Define Wrapper Classes in Java.
+  In Java, when you declare primitive datatypes, then Wrapper classes are responsible for converting them
+  into objects (Reference types).
+
+- What is a singleton class in Java? And How to implement a singleton class?
+  A class that can possess only one object at a time is called a singleton class. To implement a singleton class
+  given steps are to be followed:
+      Make sure that the class has only one object
+      Give global access to that object
+
+- Define package in Java.
+  The package is a collective bundle of classes and interfaces and the necessary libraries and JAR files.
+  The use of packages helps in code reusability.
+
+- Differentiate between instance and local variables.
+  For instance, variables are declared inside a class, and the scope of variables in javascript is limited to only
+  a specific object.
+
+  A local variable can be anywhere inside a method or a specific block of code. Also, the scope is limited to the code
+  segment where the variable is declared.
+
+- What is the final keyword in Java?
+    The term final is a predefined word in Java that is used while declaring values to variables. When a value is declared
+    using the final keyword, then the variable's value remains constant throughout the program's execution.
+
+- Why is the main method static in Java?
+  Java's main() function is static by default, allowing the compiler to call it either before or after creating a class
+  object. The main () function is where the compiler begins programme execution in every Java programme. Thus,
+  the main () method needs to be called by the compiler. If the main () method is permitted to be non-static,
+  the JVM must instantiate its class when calling the function.
+
+-  What part of memory - Stack or Heap - is cleaned in the garbage collection process?
+  On Heap memory, garbage collection is employed to release the memory used by objects with no references.
+  Every object created in the Heap space has access to the entire application and may be referred to from anywhere.
+
+- What are the differences between constructor and method of a class in Java?
+  Initializing the state of the object is done by constructors. A function Object () { [native code] }, like methods,
+  contains a group of statements (or instructions) that are carried out when an object is created. A method is a group
+  of statements that work together to complete a certain task and return the outcome to the caller. A method has the
+  option of working without returning anything.
+
+- Which among String or String Buffer should be preferred when there are a lot of updates required to be done in the data?
+  Because StringBuilder is quicker than StringBuffer, it is advised to utilize it wherever possible. However,
+  StringBuffer objects are the best choice if thread safety is required.
+
+- What happens if there are multiple main methods inside one class in Java?
+  There is no limit to the number of major approaches you can use. Overloading is the ability to have main methods with
+   different signatures than main (String []), and the JVM will disregard those main methods.
+
+- Is it mandatory for a catch block to be followed after a try block?
+  Each attempt block does not necessarily have to be followed by a catch block. Either a catch block or a final block
+  ought to come after it. Additionally, any exceptions that are expected to be thrown should be mentioned in the
+  method's throws clause.
+
+- Can you call a constructor of a class inside another constructor?
+  Yes, a class may include any number of constructors, and each function Object () {[native code] } may call the others
+  using the this() function Object() { [native code] } call function [please do not mix the this()
+  function Object() { [native code] } call function with this keyword]. The constructor's first line should be either
+  this() or this(args). Overloading of constructors is what this is called
+
+- How many overloaded add() and addAll() methods are available in the List interface? Describe the need and uses.
+  List is an interface in the Java Collections Framework. The add() and addAll() methods are the main methods at the
+  List interface. The add() method is used to add an element to the list, while the addAll() method is used to add
+  a collection of elements to the list.
+
+- How does the size of ArrayList grow dynamically? And also state how it is implemented internally?
+  A resizable array implementation in Java is called ArrayList. Dynamically expanding array lists make it possible to
+  add new elements at any time. The underlying data structure of the ArrayList is an array of the Object class.
+  The ArrayList class in Java has three constructors. There are available readObject and writeObject methods specific
+  to it. The Object Array in an ArrayList is temporary. There are implemented and Serialization-capable versions of
+  RandomAccess, Cloneable, and java.io (that are Marker Interface in Java).
+
+- How is the ‘new' operator different from the ‘newInstance()' operator in java?
+  Both the new operator and the newInstance() method are used to create objects in Java. If we already know the kind of
+  object to create, we can use the new operator; however, if the type of object to create is supplied to us at runtime,
+  we must use the newInstance() function.
+
+- Can you explain the Java thread lifecycle?
+  A thread can be in any of the following states in Java. These are the states:
+
+  - New: A new thread is always in the new state when it is first formed. The function hasn't been run yet, thus it hasn't
+  started to execute for a thread in the new state.
+  - Active: A thread switches from the new state to the active state when it calls the start() method. The runnable state
+   and the running state are both contained within the active state.
+  - Blocked or Waiting: A thread is either in the blocked state or the waiting state when it is inactive for a while
+  (but not indefinitely).
+  - Timed waiting: When we use the sleep() method on a particular thread, we are actually engaging in timed waiting.
+  The thread enters the timed wait state using the sleep() function. The thread awakens when the allotted time has
+  passed and resumes execution where it left off.
+  - Termination: A thread that has been terminated means it is no longer active in the system. In other words, the
+  thread is inactive and cannot be revived (made active again after being killed).
+
+- Is it possible to import the same class or package twice in Java and what happens to it during runtime?
+  The same package or class may be imported more than once. Neither the JVM nor the compiler raise an objection.
+  Even if you import the same class several times, the JVM will only internally load it once.
+
+- In case a package has sub packages, will it suffice to import only the main package? e.g. Does importing of
+com.myMainPackage.* also import com.myMainPackage.mySubPackage.*?
+  Sub-packages won't be imported when a package is imported. When you import a package, all of its classes
+  and interfaces — with the exception of those from its sub-packages—are imported.
+
+- CLASS VS INTERFACE
+  class
+    - The keyword used to create a class is “class”
+    - A class can be instantiated i.e, objects of a class can be created.
+    - Classes does not support multiple inheritance.
+    - It can inherit another class
+    - It can be inherited by another class using the keyword ‘extends’.
+    - It can contain constructors.
+    - It cannot contain abstract methods.
+    - Variables and methods in a class can be declared using any access specifier(public, private, default, protected)
+    - Variables in a class can be static, final or neither.
+
+  interface
+    - The keyword used to create an interface is “interface”
+    - An Interface cannot be instantiated i.e, objects cannot be created.
+    - Interface supports multiple inheritance.
+    - It cannot inherit a class.
+    - It can be inherited by a class by using the keyword ‘implements’ and it can be inherited by an interface
+      using the keyword ‘extends’.
+    - It cannot contain constructors.
+    - It contains abstract methods only.
+    - All variables and methods in a interface are declared as public.
+    - All variables are static and final.
+
+- public vs private vs default vs protected (Access Modifiers)
+    Differences.
+    1. ACCESSIBILITY
+        PUBLIC: accessible to anywhere
+        PRIVATE: is only accessible in the class they are declared
+        PROTECTED: is accessible outside the package but only to child classes
+        DEFAULT: is accessible only inside the package
+    2. ENCAPSULATION
+        PUBLIC: lowest level of Encapsulation
+        PRIVATE: modifier provides higher level of Encapsulation
+    3. You can make INNER class PRIVATE, not top class. TOP class can be PUBLIC
+
+- static vs final
+    STATIC: The value is the same for every instance of the class.
+    FINAL: Once the variable is assigned a value it can never be changed
+
+- Abstract method
+    Abstract methods are those types of methods that don't require implementation for its declaration.These methods 
+    don't have a body which means no implementation. A few properties of an abstract method are: An abstract method
+     in Java is declared through the keyword “abstract”
+
+======================== OOP
+
+- Although inheritance is a popular OOPs concept, it is less advantageous than composition. Explain.
+  Classes and objects created through inheritance are tightly coupled because changing the parent or superclass in an
+  inheritance relationship risks breaking your code. Classes and objects created through composition are loosely coupled,
+  meaning that you can more easily change the component parts without breaking your code.
+
+  Because loosely coupled code offers more flexibility, many developers have learned that composition is a better
+  technique than inheritance, but the truth is more complex. Choosing a programming tool is similar to choosing the
+  correct kitchen tool: You wouldn't use a butter knife to cut vegetables, and in the same way you shouldn't choose
+  composition for every programming scenario.
+  When to use inheritance in Java
+  In object-oriented programming, we can use inheritance when we know there is an "is a" relationship between a child
+  and its parent class. Some examples would be:
+
+    A person is a human.
+    A cat is an animal.
+    A car is a  vehicle.
+
+  In object-oriented programming, we can use composition in cases where one object "has" (or is part of) another object.
+   Some examples would be:
+
+     A car has a battery (a battery is part of a car).
+     A person has a heart  (a heart is part of a person).
+     A house has a living room (a living room is part of a house).
+  To better understand this type of relationship, consider the composition of a House:
+  public class CompositionExample {
+
+      public static void main(String... houseComposition) {
+          new House(new Bedroom(), new LivingRoom());
+          // The house now is composed with a Bedroom and a LivingRoom
+      }
+      static class House {
+          Bedroom bedroom;
+          LivingRoom livingRoom;
+
+          House(Bedroom bedroom, LivingRoom livingRoom) {
+              this.bedroom = bedroom;
+              this.livingRoom = livingRoom;
+          }
+      }
+      static class Bedroom { }
+      static class LivingRoom { }
+  }
+
+- What are Composition and Aggregation? State the difference.
+   Before we dive into the forms of Association in java, let us briefly explore the types of object relationships that
+   can exist in OOPs. There can be two types of relationships in OOPs:
+
+        IS-A
+        HAS-A
+
+  1. IS-A (Inheritance)
+  The IS-A relationship is nothing but Inheritance. The relationships that can be established between classes using the
+  concept of inheritance are called IS-A relations.
+
+  Ex: A parrot is-a Bird. Here Bird is a base class, and Parrot is a derived class, Parrot class inherits all the
+  properties and attributes & methods (other than those that are private) of base class Bird, thus establishing
+  inheritance(IS-A) relation between the two classes.
+
+  The HAS-A association on the other hand is where the Instance variables of a class refer to objects of another class.
+   In other words, one class stores the objects of another class as its instance variables thereby establishing a
+   HAS-A association between the two classes.
+
+  There are two forms of Association that are possible in Java:
+     a) Aggregation
+     b) Composition
+
+  Aggregation in java is a form of HAS-A relationship between two classes. It is a relatively more loosely coupled
+  relation than composition in that, although both classes are associated with each other, one can exist without the
+  other independently. So Aggregation in java is also called a weak association. Let us look at a simple aggregation
+  example to understand this better.
+
+  Example: Consider the association between a Country class and a Sportsperson class. Here’s how it is defined
+
+  Country class is defined with a name and other attributes like size, population, capital, etc, and a list of all the
+  Sportspersons that come from it.
+  A Sportsperson class is defined with a name and other attributes like age, height, weight, etc.
+
+  Composition in java is a form of relation that is more tightly coupled. Composition in java is also called Strong
+  association. This association is also known as Belongs-To association as one class, for all intents and purpose
+  belongs to another class, and exists because of it. In a Composition association, the classes cannot exist independent
+  of each other. If the larger class which holds the objects of the smaller class is removed, it also means logically
+   the smaller class cannot exist. Let us explore this association clearly with an example
+
+  Example: The association between College and Student. Below is how it is defined.
+
+  College class is defined with name and the list of students that are studying in it
+  A Student class is defined with name and the college he is studying at.
+  Here a student must be studying in at least one college if he is to be called Student. If the college class is removed,
+  Student class cannot exist alone logically, because if a person is not studying in any college then he is not a student.
+
+  Aggregation:
+    - Weak Association
+    - Classes in relation can exist independently
+    - Helps with code reusability. Since classes exist independently, associations can be reassigned or new associations
+      created without any modifications to the existing class.
+
+  Composition:
+    - Strong Association
+    - One class is dependent on Another Independent class. The Dependent class cannot exist independently in the event
+      of the non-existence of an independent class.
+    - Code is not that reusable as the association is dependent. Such Associations once established will create a
+    dependency, and these associations cannot be reassigned or new associations like aggregation, etc cannot
+    be created without changing the existing class.
