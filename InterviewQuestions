@@ -191,7 +191,7 @@ com.myMainPackage.* also import com.myMainPackage.mySubPackage.*?
     FINAL: Once the variable is assigned a value it can never be changed
 
 - Abstract method
-    Abstract methods are those types of methods that don't require implementation for its declaration.These methods 
+    Abstract methods are those types of methods that don't require implementation for its declaration.These methods
     don't have a body which means no implementation. A few properties of an abstract method are: An abstract method
      in Java is declared through the keyword “abstract”
 
