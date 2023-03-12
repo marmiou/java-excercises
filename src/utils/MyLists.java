@@ -56,7 +56,7 @@ public class MyLists {
     }
 
     public List<Integer> checkAtLeastOneCommonMember(List<Integer> listOne, List<Integer> listTwo) {
-       return listOne.stream().filter(itemOne -> listTwo.stream().anyMatch(itemTwo -> itemTwo.equals(itemOne)))
+        return listOne.stream().filter(itemOne -> listTwo.stream().anyMatch(itemTwo -> itemTwo.equals(itemOne)))
                 .collect(Collectors.toList());
     }
 
@@ -65,10 +65,10 @@ public class MyLists {
 //                .collect(Collectors.toList());
 //    }
 
-    public Map<Integer,Integer> accessIndexAndValue(List<Integer> myList){
+    public Map<Integer, Integer> accessIndexAndValue(List<Integer> myList) {
         AtomicInteger index = new AtomicInteger();
-        Map<Integer, Integer>  indexAndValue = new HashMap<>();
-        myList.forEach(item -> indexAndValue.put(index.getAndIncrement(),item));
+        Map<Integer, Integer> indexAndValue = new HashMap<>();
+        myList.forEach(item -> indexAndValue.put(index.getAndIncrement(), item));
         return indexAndValue;
     }
 }
