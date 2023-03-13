@@ -59,12 +59,31 @@ public class Main {
 
 // =========================== String exercises
         MyStrings myStrings = new MyStrings();
-        String name = "markella";
+        String name = "markellaaaaaaaaAAA";
+        //reverse string
         System.out.println(myStrings.reverse(name));
 
 
         System.out.println(100 + 100 + "Simplilearn");
         System.out.println("E-Learning Company" + 100 + 100);
+
+        //find occurences of a characher in String
+        System.out.println(myStrings.findOccurrences(name,'a'));
+
+
+        //find max occurence of any character in String
+        char maxOccurrence = myStrings.findMaxOccurrence(name);
+        System.out.println(maxOccurrence);
+
+        System.out.println(myStrings.checkPalindrome(name));
+
+
+// =========================== Numbers exercises
+        MyNumbers myNumbers = new MyNumbers();
+        myNumbers.fizzBuzzProblem(36);
+
+        myNumbers.fibonacci(10);
+
 
 // =========================== Arrays
         MyArrays myArrays = new MyArrays();
@@ -73,6 +92,10 @@ public class Main {
                 1789, 2035, 1899, 1456, 2013,
                 1458, 2458, 1254, 1472, 2365,
                 1456, 2165, 1457, 2456};
+        int[] intArrayB= {
+                1789, 2035, 1899, 1456, 2013
+                };
+
         String[] stringArray = {
                 "Java",
                 "Python",
@@ -82,15 +105,12 @@ public class Main {
                 "C++"
         };
 
-        Character[] charArray = {
+        char[] charArray = {
                 'a', 'b', 'd', 'w', 'm', 'a', 'a'
         };
-
-        //Sort a numeric array and a string array
-        myArrays.sortArray(intArray);
-        System.out.println(Arrays.toString(intArray));
-        myArrays.sortArray(stringArray);
-        System.out.println(Arrays.toString(stringArray));
+        char[] charArrayB = {
+                'a', 'b', 'd', 'w', 'm'
+        };
 
         //Get max value
         System.out.println(myArrays.getMAxValueInSorted(intArray));
@@ -100,6 +120,20 @@ public class Main {
 
         //Check if a char can be found in an array
         System.out.println(myArrays.checkOccurence(charArray, 'a'));
+
+        //Sort a numeric array and a string array
+        myArrays.sortArray(intArray);
+        System.out.println(Arrays.toString(intArray));
+        myArrays.sortArray(stringArray);
+        System.out.println(Arrays.toString(stringArray));
+//
+        //reverse an array of ints
+        System.out.println(Arrays.toString(intArray));
+        System.out.println(Arrays.toString(myArrays.reverse(intArray)));
+
+        //reverse an array of chars
+        System.out.println(Arrays.toString(charArray));
+        System.out.println(Arrays.toString(myArrays.reverse(charArray)));
 
 
 //   =========================== Exceptions
