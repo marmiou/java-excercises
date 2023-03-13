@@ -105,11 +105,15 @@ public class Main {
                 "C++"
         };
 
-        char[] charArray = {
+        Character[] charArray = {
                 'a', 'b', 'd', 'w', 'm', 'a', 'a'
         };
         char[] charArrayB = {
                 'a', 'b', 'd', 'w', 'm'
+        };
+
+        char[] charArrayA = {
+                'a', 'b', 'd', 'w', 'm', 'a', 'a'
         };
 
         //Get max value
@@ -133,7 +137,7 @@ public class Main {
 
         //reverse an array of chars
         System.out.println(Arrays.toString(charArray));
-        System.out.println(Arrays.toString(myArrays.reverse(charArray)));
+        System.out.println(Arrays.toString(myArrays.reverse(charArrayA)));
 
 
 //   =========================== Exceptions
